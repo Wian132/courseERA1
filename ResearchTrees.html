@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <style>
+
+        ul {
+            list-style-type: none; /* Remove the bullets */
+            margin: 0; /* Remove the default margin */
+            padding: 0; /* Remove the default padding */
+            overflow: hidden; /* Clear the float */
+        }
+
+        li {
+            float: left; /* Float the list items side by side */
+            margin-right: 20px;
+            font-size: 24px;
+            text-decoration: underline;
+            font-weight: bold;
+            font-style: initial;
+        }
+    </style>
+    <li>Research Trees</li>
+    <p> Research trees are important and complex i will do my best to visualize them in a manner that makes sense.</p>
+    <h1>Civilization1 : Abbasid Dynasty </h1>
+    <ul>
+        <li>
+           Age1 (DarkAge)
+        </li>
+        <li>
+        <button onclick="expandCollapse(this)">+</button>
+               
+            
+            
+            <script>
+  function expandCollapse(button) {
+    var parentLi = button.parentNode;
+    var childrenUl = parentLi.getElementsByClassName("children")[0];
+    if (childrenUl.style.display === "none") {
+      button.textContent = "-";
+      childrenUl.style.display = "block";
+    } else {
+      button.textContent = "+";
+      childrenUl.style.display = "none";
+    }
+  }
+    </script>
+      </body>
+</html>
